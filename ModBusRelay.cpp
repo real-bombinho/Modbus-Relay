@@ -148,6 +148,6 @@ uint64_t MB_Relay::InputState () { //01 02 00 00 00 00 780A
   con->flush();
   con->readBytes(message, 8);
   uint64_t state;
-  memcpy(&state, message, 4);
+  memcpy(&state, message, 8);
   return state;
 }
