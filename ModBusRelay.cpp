@@ -132,7 +132,7 @@ uint32_t MB_Relay::HardwareVersion () {
   con->flush();
   con->readBytes(message, 8);
   uint32_t ver;
-  memcpy(&ver, message, 8);
+  memcpy(&ver, message, 4);
   return ver;
 }
 
