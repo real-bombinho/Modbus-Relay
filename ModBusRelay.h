@@ -1,3 +1,5 @@
+#ifndef MODBUSRELAY_H
+#define MODBUSRELAY_H
 
 #include <SoftwareSerial.h>
 
@@ -29,3 +31,5 @@ public:
   uint32_t HardwareVersion ();
   uint64_t InputState ();
 };
+
+#endif
