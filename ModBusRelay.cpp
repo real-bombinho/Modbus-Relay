@@ -94,7 +94,6 @@ byte MB_Relay::getAddress () {
 MB_Relay::MB_Relay (SoftwareSerial *connect, const byte MB_Address) {
 //  SoftwareSerial connect(RXPin, TXPin);
   connect->begin(9600, SWSERIAL_8N1);
-//  this->setAddress(MB_Address); !!! crash
   message[0] = BroadCast;
   message[1] = MB_WRITE_SINGLE_REGISTER;
   message[2] = 0x40;
